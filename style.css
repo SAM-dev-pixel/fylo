@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Dark-Blue-intro-email: hsl(217, 28%, 15%);
+  --Dark-Blue-main: hsl(218, 28%, 13%);
+  --Dark-Blue-footer: hsl(216, 53%, 9%);
+  --Dark-Blue-testimonials: hsl(219, 30%, 18%);
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+html {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  background: var(--Dark-Blue-main);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+p {
+  color: #eee;
+  font-size: .85rem;
+  padding: 1.2em
+}
+header,
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 5%;
+}
+/* header style */
+header {
+  position: sticky;
+  top: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.nav-bar,
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 6.5rem;
+}
+.nav-links {
+  width: 20%;
+}
+.nav-link {
+  color: #ccc;
+  font-size: .65rem;
+  transition: .1s;
+}
+.nav-link:hover {
+  color: var(--White);
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .logo img {
+  width: 4rem;
+}
+  .nav-links {
+    width: 50%;
+  }
+}
+/* introduction style */
+.introduction-sect {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+}
+.introduction-img {
+  width: 100%;
+}
+.introduction-title {
+  color: var(--White);
+  font-size: 1.4rem; 
+  font-family: 'Raleway', sans-serif;
+}
+.btn-ctc {
+  color: var(--White);
+  font-size: .8rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: .9em 5.4em;
+  background: linear-gradient(to top right, var(--Cyan), var(--Blue));
+  border-radius: 3rem;
+}
+@media (max-width: 768px) {
+  .introduction-sect {
+    width: 100%;
+  }
+}
+/* about style */
+.about-sect {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-part {
+  text-align: center;
+}
+.about-part h2 {
+  color: var(--White);
+  font-size: 1.2rem; 
+  font-family: 'Raleway', sans-serif;
+}
